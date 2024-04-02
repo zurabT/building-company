@@ -1,0 +1,114 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 5rem;
+  margin-bottom: -0.1rem;
+  margin-top: 12rem;
+  background-color: #2c2c2c;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10rem;
+    img {
+      height: 100px;
+      width: 150px;
+    }
+  }
+
+  &__info {
+    h3 {
+      color: white;
+      font-size: 16px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+    ul {
+      margin-top: 1rem;
+      li {
+        list-style: none;
+        margin-top: 2rem;
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 14px;
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
+        }
+      }
+    }
+  }
+
+  &__contact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    h3 {
+      font-size: 16px;
+    }
+    i {
+      margin-top: 5rem;
+      letter-spacing: 0.2rem;
+
+      span {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  &__social {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-top: -13rem;
+
+    h3 {
+      font-size: 16px;
+      margin-bottom: 2rem;
+    }
+    &__icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 10rem;
+      i {
+        letter-spacing: 3rem;
+        span {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 700px) {
+  .footer {
+    &__logo {
+      display: none;
+    }
+
+    &__contact {
+      margin-left: 5rem;
+    }
+
+    &__social {
+      margin: 0;
+      margin-top: -3.8rem;
+
+      &__icons {
+        margin: 0;
+
+        flex-direction: column;
+        i {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

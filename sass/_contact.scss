@@ -1,0 +1,120 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+
+  &__img {
+    width: 749px;
+    height: 369px;
+    margin: 2rem;
+    border-radius: 5px;
+    margin-top: -7.5rem;
+    img {
+    }
+  }
+
+  &__us {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15rem;
+    padding-bottom: 10rem;
+    h2 {
+      font-size: 40px;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    &__email {
+      margin-top: 2rem;
+      outline: none;
+      border: 1px solid lightgray;
+      width: 391px;
+      height: 46px;
+      border-radius: 5px;
+      padding-left: 1rem;
+      background-color: #f3f3f3;
+    }
+
+    &__name {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      outline: none;
+      border: 1px solid lightgray;
+      width: 391px;
+      height: 46px;
+      border-radius: 5px;
+      padding-left: 1rem;
+      background-color: #f3f3f3;
+    }
+
+    &__num {
+      margin-top: 2rem;
+      outline: none;
+      border: 1px solid lightgray;
+      width: 391px;
+      height: 46px;
+      border-radius: 5px;
+      padding-left: 1rem;
+      background-color: #f3f3f3;
+    }
+    textarea {
+      outline: none;
+      border: 1px solid lightgray;
+      resize: none;
+      padding: 1rem;
+      background-color: #f3f3f3;
+      border-radius: 5px;
+      width: 500px;
+      height: 100px;
+      margin-top: 5rem;
+    }
+
+    &__btn {
+      margin-top: 1rem;
+      outline: none;
+      border: none;
+      background-color: lightblue;
+      padding: 1.5rem;
+      border-radius: 5px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      cursor: pointer;
+      font-size: 20px;
+      &:hover {
+        background-color: rgb(169, 227, 248);
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 1400px) {
+  .contact {
+    &__img {
+      display: none;
+    }
+  }
+}
+
+@media screen and(max-width: 900px) {
+  .contact {
+    &__us {
+      margin: 0;
+      &__email {
+        width: 300px;
+      }
+      &__name {
+        width: 300px;
+      }
+      &__num {
+        width: 300px;
+      }
+      textarea {
+        width: 300px;
+      }
+    }
+  }
+}
